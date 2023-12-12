@@ -1,0 +1,13 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1;
+  color: $dark-purple;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+}
