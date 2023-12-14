@@ -35,7 +35,7 @@ Desktop view :
 ### Links
 
 - Solution URL: [https://github.com/nazimulhossain/faq-component](https://github.com/nazimulhossain/faq-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://nazimulhossain.github.io/faq-component/](https://nazimulhossain.github.io/faq-component/)
 
 ## My process
 

@@ -1,30 +1,21 @@
-const iconCircle = document.querySelectorAll(".icon_circle");
-const descriptionElement = document.querySelector(".faq__description");
+const faqTitleEL = document.querySelectorAll('.faq__box');
 
+faqTitleEL.forEach((faqTitle) => {
 
+  faqTitle.addEventListener('click', () => {
+    let openEl = document.querySelector('.open');
+      if (openEl && openEl.hasAttribute("class")) {
+        openEl.firstElementChild.lastElementChild.setAttribute("name","add-circle");
+        openEl.firstElementChild.lastElementChild.classList.add("add_circle");
+        openEl.removeAttribute("class");
+      }
+      faqTitle.parentElement.classList.add('open');
+      faqTitle.lastElementChild.setAttribute("name","remove-circle");
+      faqTitle.lastElementChild.classList.remove("add_circle");
 
-iconCircle.forEach((icon)=>{
-    icon.addEventListener("click",(e)=>{
-        let iconName = icon.getAttribute("name");
-        if(iconName==='remove-circle') {
-            icon.setAttribute("name","add-circle");
-            icon.classList.add("add_circle");
-            let descriptionElementClassName = icon.parentElement.nextElementSibling.classList.contains("show");
-            if(descriptionElementClassName){
-                icon.parentElement.nextElementSibling.classList.remove("show");
-            }
-            icon.parentElement.nextElementSibling.classList.add("hidden");
-        } 
-        else {
-            icon.setAttribute("name","remove-circle");
-            icon.classList.remove("add_circle");
-            let descriptionElementClassName = icon.parentElement.nextElementSibling.classList.contains("hidden");
-            if(descriptionElementClassName){
-                icon.parentElement.nextElementSibling.classList.remove("hidden");
-            }
-            icon.parentElement.nextElementSibling.classList.add("show");
-        }
-       
-    })
-})
+   
+    
+  });
+});
+
 

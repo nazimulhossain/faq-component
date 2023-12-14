@@ -1,5 +1,6 @@
 .faq {
   max-width: 52rem;
+  height: 45rem;
   box-shadow: 0 2.4rem 2rem rgba(0, 0, 0, 0.5);
   padding: 3.2rem 2.2rem;
   border-radius: 15px;
@@ -44,7 +45,7 @@ ion-icon {
   display: none;
 }
 
-.show {
+.open .faq__description {
   display: block;
 }
 
